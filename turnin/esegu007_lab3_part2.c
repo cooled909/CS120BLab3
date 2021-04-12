@@ -20,7 +20,7 @@ int main(void) {
     unsigned char tmpA = 0x00;
     unsigned char tmpC = 0x00;
     while (1) {
-    	tmpA = PINA;
+    	tmpA = PINA & 0x0F;
     	tmpC = 0x3F;
     	if(tmpA < 13){
     		tmpC = tmpC & 0xFE;
